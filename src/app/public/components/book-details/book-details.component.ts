@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book-details',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDetailsComponent implements OnInit {
 
-  constructor() { }
+  public bookId:number=0;
+  public author:string='';
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    console.log(this.route);
+    this.route.params.subscribe((param)=>{
+      console.log("URL link values: ",param);
+      this.bookId=param['id'];
+      this.author=param['authorId'];
+    });
   }
 
 }
