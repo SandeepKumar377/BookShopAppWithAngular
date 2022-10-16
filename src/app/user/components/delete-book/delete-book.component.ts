@@ -15,7 +15,8 @@ export class DeleteBookComponent implements OnInit {
     this.route.parent?.params.subscribe((param)=>{
       console.log(param);
       this.userId=param['userId'];
-    });
+    });    
+    
   }
 
 }
