@@ -1,3 +1,13 @@
 <h2>Public Header</h2>
+<table border="1">
+    <thead>            
+        <th><a routerLink="home">Home</a></th>
+        <th><a routerLink="all-books">All Books</a></th>
+        <!-- 1st method tp pass id in url -->
+        <!-- <th><a routerLink="/public/book-details/{{bookId}}">Book details</a></th>  -->
+        <!-- 2st method tp pass id in url -->
+        <th><a [routerLink]="['book-details/',bookId,'author',author]">Book details</a></th> 
+    </thead>
+</table>
 <router-outlet></router-outlet>
 <h2>Public Header</h2>
