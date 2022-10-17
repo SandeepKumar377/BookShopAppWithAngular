@@ -18,11 +18,11 @@ import { UserModule } from './user/user.module';
   ],
   imports: [
     BrowserModule,   
-    AppRoutingModule,
     AuthModule,
     PublicModule,
     SharedModule,
-    UserModule
+    UserModule,
+    AppRoutingModule,
   ], 
   providers: [],
   bootstrap: [AppComponent]
