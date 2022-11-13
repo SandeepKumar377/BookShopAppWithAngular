@@ -1,16 +1,13 @@
-
-  <mat-toolbar color="primary">
-    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button> -->
-    <span>Book App</span>
-    <span class="spacer"></span>
-    <button mat-button>Login</button>
-    <button mat-button>Signup</button>
-    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button> -->
-  </mat-toolbar>
+<mat-toolbar color="primary">
+  <span style="cursor:pointer;" routerLink="/">Book App</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon" routerLink="/">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-button routerLink="books">All Books</button>
+  <button mat-button routerLink="/about-us">About-us</button>
+  <button mat-button routerLink="/contact-us">Contact-us</button>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/auth/login">Login</button>
+  <button mat-button routerLink="/auth/signup">Signup</button>
+</mat-toolbar>
