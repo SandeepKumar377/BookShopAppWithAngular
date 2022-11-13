@@ -5,6 +5,7 @@ import { SharedComponent } from './shared.component';
 import { SharedRoutingModule } from './shared-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from './material.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { MaterialModule } from './material.module';
   declarations: [
     NotFoundComponent,
     SharedComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { MaterialModule } from './material.module';
     MaterialModule,
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
