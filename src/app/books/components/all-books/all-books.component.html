@@ -1,3 +1,9 @@
+<button (click)="increase()">Counter ++</button>
+<button (click)="decrease()">Counter --</button>
+<p>    
+   Couter= {{couterService.counter}}
+</p>
+
 <div class="container"> 
     <mat-card class="book-card" *ngFor="let book of books">
         <mat-card-header>
