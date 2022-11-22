@@ -6,6 +6,7 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from './material.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { AuthorsComponent } from './components/authors/authors.component';
 
 
 
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NotFoundComponent,
     SharedComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AuthorsComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
   exports:[
     HeaderComponent,
     FooterComponent,
-    MaterialModule
+    MaterialModule,
+    AuthorsComponent
   ]
 })
 export class SharedModule { }

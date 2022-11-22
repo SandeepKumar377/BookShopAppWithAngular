@@ -1,0 +1,17 @@
+<div class="container"> 
+    <mat-card class="book-card" *ngFor="let book of books">
+        <mat-card-header>
+          <mat-card-title>{{book.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p><strong>Author : </strong>{{book.author}}</p>
+          <p><strong>Author : </strong>{{book.totalPages}}</p>
+          <p><strong>Author : </strong>{{book.price.value + ' '+ book.price.currency}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Delete</button>
+          <button mat-raised-button color="primary">Details</button>
+        </mat-card-actions>
+    </mat-card>      
+</div>

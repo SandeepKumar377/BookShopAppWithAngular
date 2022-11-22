@@ -5,3 +5,5 @@
 <p>    
    Couter= {{couterService.counter}}
 </p>
+<h2>Authors</h2>
+<app-authors [data]="couterService.counter" [showAuthors]="couterService.counter > 5"></app-authors>

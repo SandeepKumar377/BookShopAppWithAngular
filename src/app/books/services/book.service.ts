@@ -17,5 +17,12 @@ export class BookService {
       { "id":5, "title":"NodeJS", "totalPages":230, "author":"Node", "price":{"currency":"INR", "value":799}},
     ]
   }
+  public recentBooks(): BookModel[]{
+    return [
+      { "id":1, "title":"Angular-14", "totalPages":230, "author":"Ang", "price":{"currency":"INR", "value":399}},
+      { "id":2, "title":"ReactJS", "totalPages":230, "author":"React", "price":{"currency":"INR", "value":499}},
+      { "id":3, "title":"NextJS", "totalPages":230, "author":"Next", "price":{"currency":"INR", "value":599}},
+    ]
+  }
   
 }
