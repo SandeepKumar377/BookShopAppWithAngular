@@ -8,7 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AuthorsComponent implements OnInit {
 
   @Input() 
-  data:number | undefined;
+  set data(value: number){    
+    this._data= ++value;
+  }
+  get data(){
+    return this._data;
+  }
+  private _data!:number;
   @Input()
   showAuthors:boolean | undefined;
   constructor() { }
