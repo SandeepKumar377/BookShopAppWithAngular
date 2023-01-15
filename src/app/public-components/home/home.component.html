@@ -1,10 +1,9 @@
-<p>home works!</p>
+<p #title>home works!</p>
 
 <button (click)="increase()">Counter ++</button>
-<button (click)="decrease()">Counter --</button>
+<button (click)="decrease()" mat-raised-button #decButton>Counter --</button>
 <p>    
    Couter= {{couterService.counter}}
 </p>
-<button (click)="authors.setData(5)">Pass data to child</button>
 <h2>Authors</h2>
 <app-authors #authors> </app-authors>
