@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-authors',
@@ -7,19 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AuthorsComponent implements OnInit {
 
-  @Input() 
-  set data(value: number){    
-    this._data= ++value;
+  public data!:number;
+  public setData(value: number): void{
+    this.data=value;
   }
-  get data(){
-    return this._data;
-  }
-  private _data!:number;
-  @Input()
-  showAuthors:boolean | undefined;
-  constructor() { }
 
+  constructor() { }
   ngOnInit(): void {
   }
-
 }
