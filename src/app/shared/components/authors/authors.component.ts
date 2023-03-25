@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { TestService } from '../../services/test.service';
 
 @Component({
   selector: 'app-authors',
@@ -7,7 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AuthorsComponent implements OnInit {
   
-  @Output() myData=new EventEmitter<string>();
+  // @Output() myData=new EventEmitter<string>();
 
 
 
@@ -16,10 +17,11 @@ export class AuthorsComponent implements OnInit {
     this.data=value;
   }
 
-  constructor() { }
+  constructor(private _testService:TestService) { }
   ngOnInit(): void {
   }
   public btnClick(): void{
-    this.myData.emit('This text is from child');
+    // this.myData.emit('This text is from child');
+    this._testService.myData="This text from child using service."
   }
 }

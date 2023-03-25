@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CounterService } from 'src/app/shared/services/counter.service';
+import { TestService } from 'src/app/shared/services/test.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { CounterService } from 'src/app/shared/services/counter.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
+  constructor(public _testService: TestService) { }
 
   ngOnInit(): void {
   }
