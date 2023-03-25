@@ -1,9 +1,4 @@
-<p #title>home works!</p>
+<p>home works!</p>
 
-<button (click)="increase()">Counter ++</button>
-<button (click)="decrease()" mat-raised-button #decButton>Counter --</button>
-<p>    
-   Couter= {{couterService.counter}}
-</p>
 <h2>Authors</h2>
-<app-authors #authors> </app-authors>
+<app-authors (myData)="childData($event)"> </app-authors>
