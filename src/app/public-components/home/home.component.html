@@ -2,4 +2,15 @@
 <p>This text from Child Com = {{_testService.myData}}</p>
 <h2>Authors</h2>
 <!-- <app-authors (myData)="childData($event)"> </app-authors> -->
-<app-authors> </app-authors>
+
+
+<app-authors [author]="obj"> 
+    <h1>Dynamic data from parent</h1>
+</app-authors>
+
+<hr>
+
+
+<app-authors [author]="obj"> 
+   <app-authors-address [address]="address"></app-authors-address>
+</app-authors>

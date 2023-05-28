@@ -1,3 +1,15 @@
-<p>authors works!</p>
-<p>Data coming from Parent : {{data}}</p>
-<button (click)="btnClick()">Pass data to Parent</button>
+<div class="child-comp">
+        <p>authors works!</p>
+    <!-- <p>Data coming from Parent : {{data}}</p> -->
+    <button (click)="exportToExcel()">Export to Excel</button>
+
+    <button (click)="btnClick()">Pass data to Parent</button>
+
+    <p>
+        Authers data: <br>
+        Id: {{author.id}}<br>
+        Name: {{author.name}}
+    </p>
+
+    <ng-content></ng-content>
+</div>
