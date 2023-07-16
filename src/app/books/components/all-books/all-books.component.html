@@ -1,8 +1,3 @@
-<a [routerLink]="'recent'">Recent Books</a>
-<button (click)="increase()">Counter ++</button>
-<button (click)="decrease()">Counter --</button>
-<p>    
-   Couter= {{couterService.counter}}
-</p>
+<button mat-raised-button color="primary" [routerLink]="'new'">Add Book</button>
 <app-book-card [allBooks]="books"></app-book-card>
 
